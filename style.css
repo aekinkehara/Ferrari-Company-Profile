@@ -1,8 +1,11 @@
 /* google font */
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Jacques+Francois+Shadow&display=swap');
+
+
 
 body {
-    font-family: "Montserrat", sans-serif !important;
+    font-family: "Chakra Petch", sans-serif !important;
 }
 
 
@@ -148,18 +151,18 @@ body {
     /* top: -575px; */
     padding-top: 70px;
     border-bottom: 1px solid rgba(0, 0, 0, 0.05);
-    background-color: #dfd2d2;
+    background-color: #000000;
 
 }
 
 .blog-heading span {
-    color: #9a1212;
+    color: #ab0707;
 }
 
 .blog-heading h3 {
     font-size: 2.4rem;
     font-weight: 600;
-    color: #060000;
+    color: #8d1111;
 }
 
 .blog-container {
@@ -172,9 +175,15 @@ body {
 
 .blog-box {
     width: 350px;
-    background-color: #ffffff;
-    border: 1px solid #e6e5e5;
+    background-color: #fbf7f7;
+    border: 1px solid #4d0101;
     margin: 20px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.blog-box:hover {
+    transform: translateY(-10px); 
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); 
 }
 
 .blog-img {
@@ -203,17 +212,17 @@ body {
 .blog-text .blog-title {
     font-size: 1.3rem;
     font-weight: 600;
-    color: #060000;
+    color: #9b0808;
     text-decoration: none;
 }
 
 .blog-text .blog-title:hover {
-    color: #980303;
+    color: #0b0000;
     transition: 0.3s all ease;
 }
 
 .blog-text p {
-    color: #4f4f4f;
+    color: #8c0101;
     font-size: 0.9rem;
     margin: 20px 0px;
 }
@@ -235,7 +244,7 @@ body {
     width: 100%;
     padding: 1rem;
     text-align: center;
-    background-color: #dfd2d2;
+    background-color: #d8d5d5;
 
 }
 
@@ -267,7 +276,6 @@ body {
     padding: 1rem;
     display: grid;
     gap: 1rem;
-    background-color: #4a0505;
     border-radius: 5px;
     box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.1);
     cursor: pointer;
@@ -276,19 +284,19 @@ body {
 
 .card i {
     font-size: 2.5rem;
-    color: #a11919;
+    color: #fcfbfb;
 }
 
 .card p {
     font-size: 1rem;
     font-weight: 500;
-    color: #fdfcfc;
+    color: #f9f7f7;
 }
 
 .card hr {
     width: 40px;
     margin: auto;
-    color: #290101;
+    color: #fdfafa;
 }
 
 .card img {
@@ -310,6 +318,20 @@ body {
 .card .name:hover {
     color: #ff6161;
 }
+
+.card {
+    background-color: #940707;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out; /* add transition effect */
+  }
+  
+  .card:hover {
+    transform: translateY(-10px); /* move the card up by 10px */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* add a deeper shadow */
+  }
 
 .footer-card h4 {
     font-size: 1.25rem;
@@ -434,3 +456,4 @@ footer {
         padding: 10px;
     }
 }
+
